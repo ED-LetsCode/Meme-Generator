@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+:root{
+    --gradient-color: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+    background: var(--gradient-color);
+}
+
+.container {
+    width: 550px;
+    height: 250px;
+    margin: 2rem auto;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
+.navbar {
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0,0,0,0.1) 2px 2px 10px;
+}
+
+.navbar #navbar-logo {
+    width: 31.5px;
+    height: 26.3px;
+    margin-right: 1rem;
+}
+
+.meme-container{
+    padding: 2rem;
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px;
+}
+
+.textfield {
+    width: 230px;
+    height: 35px;
+    border-radius: 10px;
+    border: solid 1px #D5D4D8;
+    text-align: center;
+}
+
+.btn {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background: var(--gradient-color);
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.img-container {
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.img-container > #meme-image {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+}
+
+.memeText {
+    display: block;
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    text-shadow:
+            2px 2px 0 #000,
+            -2px -2px 0 #000,
+            2px -2px 0 #000,
+            -2px 2px 0 #000,
+            0 2px 0 #000,
+            2px 0 0 #000,
+            0 -2px 0 #000,
+            -2px 0 0 #000,
+            2px 2px 5px #000;
+}
+
+.bottom{
+    bottom: 10%;
+}
+
+.top{
+    top: 10%;
+}
+
